@@ -155,7 +155,7 @@
 
             $chooser.eq(1).append('<li class="divider" />');
             var $li = $("<li/>");
-            var $a_use_default = $("<a>Use default</a>");
+            var $a_use_default = $("<a>Default</a>");
             $a_use_default.click(function (ev) {
                 ev.preventDefault();
                 window.localStorage.removeItem("theme");
@@ -164,12 +164,12 @@
             $li.append($a_use_default);
             $chooser.eq(1).append($li);
 
-            $chooser.eq(1).append('<li class="divider" />');
-            $chooser
-                .eq(1)
-                .append(
-                    '<li><a href="http://www.bootswatch.com">Powered by Bootswatch</a></li>'
-                );
+            // $chooser.eq(1).append('<li class="divider" />');
+            // $chooser
+            //     .eq(1)
+            //     .append(
+            //         '<li><a href="http://www.bootswatch.com">Powered by Bootswatch</a></li>'
+            //     );
             $this.replaceWith($chooser);
         });
     };
