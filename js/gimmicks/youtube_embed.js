@@ -28,12 +28,13 @@
                 if (m && m[1].length === 11) {
                     // insert the iframe
                     var short_handle = m[1];
+                    
                     var frame = $(
-                        '<iframe class="md-external" frameborder="0" allowfullscreen></iframe>'
+                        '<iframe class="md-external src="" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media;" referrerpolicy="no-referrer" allowfullscreen></iframe>'
                     );
                     frame.attr(
                         "src",
-                        "http://youtube.com/embed/" + short_handle
+                        "https://www.youtube-nocookie.com/embed/" + short_handle
                     );
                     // remove the a tag
                     $this.replaceWith(frame);
